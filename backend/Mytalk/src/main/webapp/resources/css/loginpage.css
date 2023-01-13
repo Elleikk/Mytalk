@@ -1,0 +1,57 @@
+body{
+    background-color: rgb(250, 227, 1);
+}
+
+/* .logoB{
+    display: flex;
+    justify-content: center;
+} */
+
+.logoB{
+    width: 100%;
+}
+
+.logoimg{
+    position: relative;
+    margin: 0 auto;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+}
+
+.logoimg img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 110%;
+    transform: translate(-50%, -50%);
+}
+
+.Box{
+    display: flex;
+    justify-content: center;
+}
+
+.inputBox2{
+    width: 300px;
+}
+
+.inputBox2 input{
+    width: 100%;
+    height: 40px;
+}
+
+.BTNBox button{
+    margin-top: 5px;
+    width: 300px;
+    height: 40px;
+}
+
+.find{
+	margin-top: 80px;
+}
+
+.findBox{
+    justify-content: space-evenly;
+}
+

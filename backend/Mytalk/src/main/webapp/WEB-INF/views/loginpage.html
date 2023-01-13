@@ -1,0 +1,86 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>마이톡 로그인페이지</title>
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+	
+	<link rel="stylesheet" href="resources/css/loginpage.css">
+
+	<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+	<script defer src="resources/js/loginpage.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="row logo">
+			<div class="col-12">
+
+				<div class="logoB">
+					<div class="logoimg">
+						<img src="resources/images/logo.jpg" alt="로고">
+					</div>	
+				</div>
+
+			</div>
+		</div>
+		<div class="row input">
+			<div class="col-12">
+
+				<div class="inputBox Box">
+					<div class="inputBox2">
+						<div id="loginId">
+							<input id="user" type="text" placeholder="마이톡계정(이메일 또는 전화번호)">
+						</div>
+						<div id="pwd">
+							<input id="password" type="password" placeholder="비밀번호">
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<div class="row submit">
+			<div class="col-12">
+				
+				<div class="BTNBox Box">
+					<button id="loginBTN">로그인</button>
+					<!-- <input type="submit" value="로그인버튼2"> -->
+				</div>
+
+			</div>
+		</div>
+		<div class="row check">
+			<div class="col-12">
+				
+				<div class="checkBox Box">
+					<div class="checkBox2">
+						<input type="checkbox">
+						자동로그인
+						?
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<div class="row find">
+			<div class="col-12">
+				
+				<div class="findBox Box">
+					<div class="findId">
+						마이톡계정 찾기
+					</div>
+					<div class="findPWD">
+						비밀번호 재설정
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

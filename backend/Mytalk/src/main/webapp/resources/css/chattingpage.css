@@ -1,0 +1,234 @@
+
+html, body{
+    min-height: 290px;
+}
+
+/* /////////////////////////////// 상단 ////////////////////////////////////// */
+#header{
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(186, 206, 224);
+}
+
+.nameBox{
+    display: flex;
+    height: 70px;
+}
+
+.imgBox{
+    position: relative;
+    width: 70px;
+    height: 70px;
+}
+
+.imgBox2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.imgBox2 img{
+    width: 100%;
+}
+
+.userBox{
+    margin-left: 5px;
+}
+
+.NBox{
+    position: relative;
+    width: 80px;
+    height: 50%;
+}
+.PNumBox{
+    position: relative;
+    width: 80px;
+    height: 50%;
+}
+
+.name{
+    position: absolute;
+    bottom: 0;
+}
+.PNum{
+    position: absolute;  
+    top: 0;  
+}
+
+.uiBox{
+    display: flex;
+    justify-content: flex-end;
+    height: 70px;
+    margin-bottom: 20px;
+}
+
+.headerBox{
+    margin: 35px 0 0 5px;
+    position: relative;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.headerBox:hover{
+    background-color: rgba(0, 0, 0, 0.07);
+}
+
+.iconBox{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 23px;
+}
+
+/* //////////////////////////// 중단 /////////////////////////////////// */
+#content{
+    margin-top: 90px;
+    background-color: rgb(186, 206, 224);
+}
+
+.chatBox{
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.chatBox::-webkit-scrollbar{
+    display: none;
+}
+
+.chatting{
+    display: flex;
+}
+
+.mychatBox{
+    justify-content: flex-end;
+}
+
+.mychat{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.chatname{
+    position: relative;
+    height: 30px;
+}
+.chatname2{
+    position: absolute;
+    bottom: 0;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.chattingBox{
+    /* background-color: rgb(250, 227, 1); */
+    position: relative;
+    min-width: 70px;
+    max-width: 70%;
+    min-height: 40px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.mychat .chattingBox{
+    margin-right: 25px;
+    background-color: rgb(250, 227, 1);
+}
+
+.mychat .chattingBox::before{
+    content: "\25B6";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: -15px;
+    font-size: 20px;
+   color: rgb(250, 227, 1);
+}
+
+.yourchat .chattingBox{
+    margin-left: 25px;
+    background-color: #fff;
+}
+.yourchat .chattingBox::before{
+	content: "\25C0";
+	display: block;
+    position: absolute;
+    top: 0;
+    left: -15px;
+    font-size: 20px;
+    color: #fff;
+}
+
+/* /////////////////////////// 하단 //////////////////////////////////// */
+
+#chatUi{
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.inputBox{
+    margin: 10px 0;
+    width: 100%;
+    height: 75px;
+}
+
+#chatInput{
+    padding: 5px;
+    width: 100%;
+    height: 100%;
+    resize: none;
+
+    border: none;
+    outline: none;
+}
+
+#chatInput:focus{
+    border: none;
+    outline: none;
+}
+
+#chatInput::-webkit-scrollbar{
+    display: none;
+}
+
+.uiBigBox{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 15px;
+}
+
+.uiBox2{
+    display: flex;
+}
+
+.uiBox2 > .headerBox{
+    margin: 5px 5px 0 0;
+}
+
+#postBTN{
+    margin-top: 5px;
+    width: 70px;
+    height: 35px;
+
+    border: none;
+    background: #ccc;
+    border-radius: 3px;
+    opacity: .3;
+    cursor: default;
+}
+
+#postBTN.on{
+    background-color: rgb(250, 227, 1);
+    opacity: 1;
+    cursor: pointer;
+}
